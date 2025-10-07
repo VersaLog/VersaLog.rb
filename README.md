@@ -1,5 +1,10 @@
 # What is VersaLog.rb?
 
+[![Gem Version](https://badge.fury.io/rb/versalog.svg)](https://badge.fury.io/rb/versalog)
+[![Downloads](https://img.shields.io/gem/dt/versalog.svg)](https://rubygems.org/gems/versalog)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
+[![Ruby Version](https://img.shields.io/badge/ruby-%3E%3D%202.0.0-red.svg)](https://www.ruby-lang.org/)
+
 What is VersaLog.rb?
 VersaLog is a powerful and flexible logging library for Ruby.
 It supports everything from simple usage to advanced, highly customizable configurations to meet a wide range of needs.
