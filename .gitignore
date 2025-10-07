@@ -1,0 +1,22 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/sig/
+/spec/
+/bin/
+
+# rspec failure tracking
+.rspec_status
+.rubocop.yml
+.Rakefile
+.Gemfile
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+versalog.gemspec
+.rspec
+versalog-1.6.5.gem
