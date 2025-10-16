@@ -9,6 +9,12 @@ What is VersaLog.rb?
 VersaLog is a powerful and flexible logging library for Ruby.
 It supports everything from simple usage to advanced, highly customizable configurations to meet a wide range of needs.
 
+## Support
+
+Join our Discord server for support, questions, and community discussions:
+
+[![Discord](https://img.shields.io/badge/Discord-Support%20Server-7289DA?style=flat&logo=discord)](https://discord.gg/MaWeRFxa)
+
 ## Installation
 
 ```
