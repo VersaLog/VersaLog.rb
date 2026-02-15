@@ -280,5 +280,29 @@ module Versalog
   def critical(msg, tag = nil)
     _Log(msg, "CRITICAL", tag)
   end
+
+  def step(title, step, total, tag = nil)
+    msg = "[STEP #{step}/#{total}] #{title}"
+    _Log(msg, "INFO", tag)
+  end
+
+  def progress(title, current, total, tag = nil)
+    percent = total.to_i > 0 ? ((current.to_f / total.to_f) * 100).to_i : 0
+    msg = "#{title} : #{percent}% (#{current}/#{total})"
+    _Log(msg, "INFO", tag)
+  end
+
+  def timer(title, tag = nil)
+    start_time = Time.now
+    _Log("#{title} : start", "INFO", tag)
+    
+    begin
+      yield if block_given?
+    ensure
+      elapsed = Time.now - start_time
+      _Log("#{title} : done (#{format('%.2f', elapsed)}s)", "INFO", tag)
+    end
+  end
+
   end
 end
